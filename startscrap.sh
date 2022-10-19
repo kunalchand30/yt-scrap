@@ -20,7 +20,7 @@ source crawlerenv/bin/activate
 # install flask scrapy and scrapy user agents
 pip install flask scrapy scrapy-user-agents pandas google-api-python-client jsoncsv
 rm -rf scrap_app
-# tell flask the app name
+# tell flask the app names
 export FLASK_APP='scrap_app'
 # start flask app
 echo running flask app
