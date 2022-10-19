@@ -9,7 +9,7 @@ class AmazonspiderSpider(CrawlSpider):
     # start_urls = ['https://www.amazon.in/s?k=printers&ref=nb_sb_noss']
     rules = (
         Rule(LinkExtractor(restrict_xpaths=(
-            "//h2[@class='a-size-mini a-spacing-none a-color-base s-line-clamp-2' or @class='a-size-mini a-spacing-none a-color-base s-line-clamp-4' or @class='a-size-mini a-spacing-none a-color-base s-line-clamp-3' or @class='a-size-mini a-spacing-none a-color-base s-line-clamp-1']/a")), callback='parse_item', follow=True),
+            "//h2[@class='a-size-mini a-spacing-none a-color-base s-line-clamp-2' or @class='a-size-mini a-spacing-none a-color-base s-line-clamp-4' or @class='a-size-mini a-spacing-none a-color-base s-line-clamp-3' or @class='a-size-mini a-spacing-none a-color-base s-line-clamp-1' or @class='a-size-mini a-spacing-none a-color-base s-line-clamp-5' or @class='a-size-mini a-spacing-none a-color-base s-line-clamp-6']/a")), callback='parse_item', follow=True),
         Rule(LinkExtractor(
             restrict_xpaths="//a[@class='s-pagination-item s-pagination-next s-pagination-button s-pagination-separator']")),
     )
