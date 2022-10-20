@@ -48,10 +48,10 @@ ROBOTSTXT_OBEY = False
 #SPIDER_MIDDLEWARES = {
 #    'webscrapers.middlewares.WebscrapersSpiderMiddleware': 543,
 # #}
-# DOWNLOADER_MIDDLEWARES = {
-#     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
-#     'scrapy_user_agents.middlewares.RandomUserAgentMiddleware': 400,                 #anable this is not work 50-54
-# }
+DOWNLOADER_MIDDLEWARES = {
+    'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+    'scrapy_user_agents.middlewares.RandomUserAgentMiddleware': 400,                 #anable this is not work 50-54
+}
 ROTATING_PROXY_LIST = [
     'proxy1.com:8000',
     'proxy2.com:8031',
