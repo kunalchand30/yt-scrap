@@ -18,7 +18,7 @@ rm -rf scrappers
 # activate virtualenv
 source crawlerenv/bin/activate
 # install flask scrapy and scrapy user agents
-pip install flask scrapy scrapy-user-agents pandas google-api-python-client jsoncsv
+pip install flask scrapy scrapy-user-agents pandas google-api-python-client jsoncsv scrapy_proxies
 rm -rf scrap_app
 # tell flask the app names
 a2enmod proxy_http
