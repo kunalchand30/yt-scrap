@@ -46,8 +46,8 @@ def create_app(test_config=None):
             # This will remove any existing file with the same name so that the scrapy will not append the data to any previous file.
             if os.path.exists(os.path.join(tempfile.gettempdir(),'output.json')):
                 os.remove(os.path.join(tempfile.gettempdir(),'output.json'))
-            if os.path.exists(os.path.join(tempfile.gettempdir(),'output.csv')):
-                os.remove(os.path.join(tempfile.gettempdir(),'output.csv'))
+#             if os.path.exists(os.path.join(tempfile.gettempdir(),'output.csv')):
+#                 os.remove(os.path.join(tempfile.gettempdir(),'output.csv'))
 
             with open(os.path.join(tempfile.gettempdir(),'start_urls.json'), 'w') as writeurlobj: # here start_urls.json file will be created in write mode
                 json.dump({'urls':input_url_final}, writeurlobj)  #this command write the final input in json format which we give from frontend
