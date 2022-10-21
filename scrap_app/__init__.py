@@ -1,5 +1,6 @@
 import os, tempfile, json
 import subprocess
+import csv
 from scrapy.crawler import CrawlerRunner
 # json
 from flask import Flask, render_template, jsonify, request, redirect, url_for, send_file
